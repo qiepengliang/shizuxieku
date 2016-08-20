@@ -1,11 +1,28 @@
 <div class="m-index">
-  <header>
+  <div id="m-container">
 
-  </header>
-  <section>
-
-  </section>
+  </div>
   <footer>
-    
+    <ul>
+      <li class="active">
+        <i class="yo-ico">&#xe630;</i>
+        <b>首页</b>
+      </li>
+      <li>
+        <i class="yo-ico">&#xe700;</i>
+        <b>分类</b>
+      </li>
+      <li class="hi active">
+        <i class="yo-ico">&#xe611;</i>
+      </li>
+      <li>
+        <i class="yo-ico">&#xe622;</i>
+        <b>购物车</b>
+      </li>
+      <li>
+        <i class="yo-ico">&#xe603;</i>
+        <b>我的10足</b>
+      </li>
+    </ul>
   </footer>
 </div>
