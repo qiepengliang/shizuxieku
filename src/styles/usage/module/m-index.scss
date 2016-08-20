@@ -3,7 +3,8 @@
   height: 100%;
   @include flexbox();
   @include flex-direction(column);
-  #m-container{
+  .m-container{
+    position: relative;
     @include flex();
     width: 100%;
   }
