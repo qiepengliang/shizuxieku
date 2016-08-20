@@ -1,14 +1,20 @@
-var indexTpl=require('../tpls/index.string');
-
-//定义视图
-SPA.defineView('index',{//spa 定义视图 视图的名字 html将index.string加载到
-  html:indexTpl
-
-  //装载子视图
-  // modules:[{
-  //   name:'content',
-  //   container:'#m-container',
-  //   views:['home'],
-  //   defaultTag:'home'
-  // }]
-})
+var indexTpl=require("../tpls/index.string");
+SPA.defineView("index",{
+	//装载主视图
+	html:indexTpl,
+	//定义插件
+	plugins:["delegated"],
+	//装载子模块
+	modules:[{
+		name:"content",
+		container:"#m-container",
+		views:["home","sort","shop","my"],
+		defaultTag:"home"
+	}],
+	//绑定tap事件
+	bindActions:{
+		"switch":function(el,data){
+			this.modules.content.launch(data.name);
+		}
+	}
+});
